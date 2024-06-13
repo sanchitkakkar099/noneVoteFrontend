@@ -1,8 +1,13 @@
 import { configureStore, combineReducers, createAction } from "@reduxjs/toolkit";
-import {  authApi} from "../service";
+import authSlice from "./authSlice";
+
+import {  authApi, postApi} from "../service";
 
 const appReducer = combineReducers({
+  authState: authSlice,
   [authApi.reducerPath]: authApi.reducer,
+  [postApi.reducerPath]: postApi.reducer,
+
 });
 
 const rootReducer = (state, action) => {
@@ -21,5 +26,6 @@ export const store = configureStore({
   middleware: (getDefaltMiddleware) =>
     getDefaltMiddleware({ serializableCheck: false }).concat([
       authApi.middleware,
+      postApi.middleware
     ])
 });

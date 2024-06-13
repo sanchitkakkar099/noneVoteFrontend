@@ -36,7 +36,7 @@ root.render(
                   <Suspense fallback={<div>Loading...</div>}><Component /></Suspense>
                 }
               ></Route>
-              <Route path="/" element={<Navigate to="/login" />} />
+              <Route path="/" element={<Navigate to="/" />} />
             </>
           ))}
         </Routes>

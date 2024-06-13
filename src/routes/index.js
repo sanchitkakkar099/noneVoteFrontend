@@ -4,7 +4,7 @@ const LoginSingnupComponent = lazy(() => import("../components/auth/LoginSingup"
 
 
 export const privateRoutes = [
-    { path: "/dashboard", Component: Dashboard},
+    { path: "/", Component: Dashboard},
 ]
 
 export const publicRoutes = [

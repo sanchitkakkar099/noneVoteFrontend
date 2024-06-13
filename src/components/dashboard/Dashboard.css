@@ -1,6 +1,5 @@
 .c-main {
-    
-
+    align-items: flex-start;
 }
 
 .c-left {
@@ -26,8 +25,8 @@ width: 60%;
 
 .c-left-lower {
     border: 2px solid black;
-    height: 50rem;
-    margin: 1rem 1rem 0rem 0rem;
+    
+    margin: 1rem 1rem 1rem 0rem;
     padding: 1rem;
    
 }
@@ -38,14 +37,66 @@ width: 60%;
 }
 
 .c-right {
-    width: 40%;
+    max-width: 40%;
+    min-width: 40%;
+    min-height: 80svh;
     border: 2px solid black;
-    height: 50rem;
     margin: 1.5rem 0rem 0rem 0rem;
     padding: 1rem;
 
 
 
+}
+
+.right-code-embed {
+   
+}
+
+.collection-item {
+    margin-bottom: 8px;
+}
+
+.text-block-2 {
+    margin-right: 8px;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.w-layout-hflex {
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+}
+
+.image {
+    width: 64px;
+    height: 64px;
+    margin-right: 16px;
+}
+
+.w-layout-vflex {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+.text-block {
+    color: #256ad8;
+    font-weight: 700;
+}
+
+.text-block-4 {
+    font-size: 14px;
+}
+
+.w-layout-hflex {
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+}
+
+.custom-pointer {
+    cursor: pointer;
 }
 
 
